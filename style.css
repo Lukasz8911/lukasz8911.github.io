@@ -34,23 +34,78 @@ li a {
   justify-content: center;
   text-align: center;
   padding: 10px 0px;
-  height: 500px;
+  padding-bottom: 80px;
 }
 
-#home h2 {
-  font-size: 30px;
-  text-decoration: underline;
+.content-home {
+  display: inline-flex;
+  column-gap: 10px;
+  width: 80%;
+  flex-wrap: wrap;
 }
 
-#home th {
-  font-size: 20px;
+.div1 {
+  flex: 1;
+
+  min-width: 300px;
+}
+
+.div2 {
+  flex: 1;
+
+  min-width: 300px;
+}
+
+.h3-header {
+  font-size: 1.5rem;
+  border-bottom: 1px dashed;
+  padding: 10px 0 10px 0;
+  margin: 0;
   border: 2px solid black;
-  width: 50%;
-  background-color: brown;
+  background-color: rgb(95, 95, 95);
+  border-radius: 15%;
 }
 
-#home td {
-  background-color: darkgray;
+.divs-content {
+  height: 250px;
+  align-content: center;
+  margin: 5px 0;
+  border: 2px solid black;
+  background-color: rgb(167, 160, 160);
+  font-size: 1.2rem;
+  border-radius: 20px;
+  padding: 0 15px;
+}
+
+.play-button {
+  size: 50px;
+  font-size: 35px;
+  border-radius: 20px;
+  padding: 20px 50px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.play-button:hover {
+  background-color: rgb(236, 127, 1);
+  font-size: 40px;
+  box-shadow: 7px 7px 10px brown;
+  transition: font-size 250ms linear, box-shadow 300ms linear 250ms;
+}
+
+.play-button:active {
+  background-color: rgb(236, 127, 1);
+  font-size: 45px;
+  color: white;
+}
+
+.play-button a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+  font-size: 40px;
 }
 
 #news {
@@ -175,7 +230,7 @@ li a {
   border: 1.5px black solid;
   border-radius: 20%;
   padding: 5px 45px;
-  background-color: darkolivegreen;
+  background-color: rgb(204, 55, 1);
   color: black;
   transition: background-color 0.5s, color 0.5s;
   box-shadow: 0 0 15px grey;
@@ -189,9 +244,10 @@ li a {
 .rankings:hover,
 .classes:hover,
 .gallery:hover {
-  background-color: black;
+  background-color: rgb(32, 31, 31);
   color: white;
   cursor: pointer;
+  transition: all 500ms ease-in;
 }
 
 .home:active,
@@ -201,58 +257,12 @@ li a {
 .rankings:active,
 .classes:active,
 .gallery:active {
-  background-color: grey;
+  background-color: orangered;
   color: black;
   cursor: pointer;
-  font-size: 18px;
-  transition: font-size 0.1s;
-}
-
-.tryasguest {
-  margin: 10px auto;
-  height: 200px;
-}
-
-.tryasguest p {
-  font-weight: 500;
-  font-size: 18px;
-  width: 70%;
-  margin: auto;
-  padding-top: 10px;
-}
-
-#home table {
-  width: 80%;
-  margin: 20px auto;
-}
-
-.play-button {
-  size: 50px;
-  font-size: 35px;
-  border-radius: 20px;
-  padding: 20px 50px;
-  margin-top: 50px;
-  cursor: pointer;
-}
-
-.play-button:hover {
-  background-color: chartreuse;
-  border-radius: 20px;
-}
-
-.play-button:active {
-  background-color: chartreuse;
-  border-radius: 20px;
-  color: white;
-}
-
-.play-button a {
-  text-decoration: none;
-  color: black;
-  text-transform: uppercase;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 400;
-  font-size: 40px;
+  font-size: 25px;
+  font-weight: 600;
+  transition: all 200ms linear;
 }
 
 #classes {
