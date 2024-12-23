@@ -5,6 +5,7 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  font-family: monospace;
 }
 
 .nav {
@@ -16,12 +17,12 @@ body {
   margin: 5px 0;
   width: 100%;
   padding: 0;
-  font-family: monospace;
 }
 
 .nav button {
   background-color: rgb(53, 36, 15);
   border-radius: 20%;
+  font-family: monospace;
 }
 
 li a {
@@ -84,6 +85,7 @@ li a {
 
 .play-button {
   size: 50px;
+  font-family: monospace;
   font-size: 35px;
   border-radius: 20px;
   padding: 20px 50px;
@@ -222,7 +224,7 @@ li a {
   display: block;
   justify-content: center;
   margin: auto;
-  width: 60%;
+  width: 50%;
 }
 
 .home,
@@ -234,12 +236,14 @@ li a {
 .gallery {
   border: 1.5px black solid;
   border-radius: 20%;
-  padding: 5px 45px;
+  padding: 7px;
   background-color: rgb(204, 55, 1);
   color: black;
   transition: background-color 0.5s, color 0.5s;
-  box-shadow: 0 0 15px grey;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.877);
   font-size: 20px;
+  width: 120px;
+  margin: 0;
 }
 
 .home:hover,
@@ -407,11 +411,13 @@ footer {
   background-color: bisque;
   font-size: 16px;
   font-family: monospace;
+  transition: font-size 500ms ease-out;
+  font-weight: 700;
 }
 
 #scrollup:active {
-  background-color: aqua;
-  color: brown;
+  background-color: orangered;
+  color: black;
   font-size: 16px;
   font-family: monospace;
 }
