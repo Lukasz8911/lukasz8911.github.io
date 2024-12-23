@@ -37,6 +37,11 @@ li a {
   padding-bottom: 80px;
 }
 
+#home h2 {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
 .content-home {
   display: inline-flex;
   column-gap: 10px;
